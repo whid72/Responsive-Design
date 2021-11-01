@@ -1,0 +1,175 @@
+/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border:1px solid grey;  */
+}
+
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size:1.8rem;
+    line-height:1.5;
+    color:#4f4f4f;
+    background-color:#FBFFFB;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #FBFFFB;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+hr{
+    margin: 2rem;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(34, 49, 63, .7);
+    position: absolute;
+    width: 100%;
+    
+}
+.header a{
+    text-decoration: none;
+    padding: 2%;
+    margin: 1%;
+    color: white;
+    transition: 1s;
+}
+.header a:hover{
+    color: #fff;
+    background-color: #4f4f4f;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.logo img{
+    width: 50%;
+}
+.one{
+    background-image: url('../images/universe.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24% 0px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+.title button{
+    width: 20%;
+    margin: 3% auto;
+    display:block;
+    border-radius: 5px;
+    padding: 1%;
+    transition: 1s;
+}
+.title button:hover{
+    color: white;
+    background-color: #003697;
+}
+.sectionTwo{
+    margin: 3rem 0;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainDivs{
+    width: 50%;
+    margin: 25px;
+    width: 20%;
+    transition: transform .1s;
+}
+.mainDivs:hover{
+    transform: scale(1.2);
+    border: 1px solid black;
+}
+.mainDivs p{
+    text-align: center;
+}
+.mainDivs img{
+    width:  200%;
+    height: 20rem;
+    object-fit: cover;
+}
+footer{
+    padding: 25rem;
+    background-color: black;
+    text-align: center;
+}
+footer p{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #FBFFFB;
+}
+footer button{
+    width: 20%;
+    margin: 3% auto;
+    display:block;
+    border-radius: 5px;
+    padding: 1%;
+    transition: 1s;
+}
+footer button:hover{
+    color: white;
+    background-color: #003697;
+}
+.about, .contact, .projects{
+    background-image: url(../images/universe.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
